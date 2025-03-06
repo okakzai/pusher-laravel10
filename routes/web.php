@@ -1,6 +1,8 @@
 <?php
 
+use App\Events\MessageCreated;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ChatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/pusher', [ChatController::class, 'index'])->name('pusher');
+Route::get('/pusher/notifikasi', [ChatController::class, 'notifikasi']);
+Route::post('/pusher/kirim', [ChatController::class, 'kirim'])->name('pusher-kirim');

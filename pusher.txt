@@ -1,0 +1,37 @@
+TUTORIAL
+- https://www.youtube.com/playlist?list=PLuLjNbJEa8Uh3YeB5qp7l4JJ-uWkyTDOp
+
+TEKNOLOGI
+- PHP 8.2.12
+- Laravel 10.48.28
+- MariaDB 10.4.32 
+- Node.js 21.7.3
+
+DEVELOPMENT
+1. Terminal: composer create-project --prefer-dist laravel/laravel pusher "10.*"
+2. Terminal: cd pusher
+3. Terminal: code .
+4. Terminal: php artisan serve
+5. Terminal: git init
+6. Terminal: git add .
+7. Terminal: git commit -m "Pertamaz"
+8. Terminal: php artisan make:event MessageSent
+9. VSCode: Edit file "MessageSent.php" di folder "app/Events"
+10. Terminal: php artisan make:controller ChatController
+11. VSCode: Edit file "ChatController.php" di folder "app/Http/Controllers"
+12. VSCode: Edit file "web.php" di folder "routes"
+13. VSCode: Buat file "form.blade.php" di folder "resources/views/pusher"
+14. VSCode: Buat file "notifikasi.blade.php" di folder "resources/views/pusher"
+15. Browser: SignIn akun di "https://pusher.com"
+16. Browser: Buat "Channel"
+17. Browser: Copy nilai di menu "App Keys" ke file ".env"
+18. Terminal: composer require pusher/pusher-php-server
+19. Browser: Reload "http://127.0.0.1:8000"
+20. Browser: Lihat isi menu "Debug Console"
+21. VS Code: git init
+22. VS Code: git add .
+23. VS Code: git commit -m "Pertamaz"
+24. VS Code: git branch -M main
+25. VS Code: git remote add origin https://github.com/okakzai/pusher-laravel10.git
+26. VS Code: git pull origin main --rebase
+27. VS Code: git push -u origin main
